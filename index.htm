@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey </title>
+    <link rel="shortcut icon" href="survey.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="conteiner">
+   <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+    <p class="description"> Thank you for taking the time to help me improve my self </p>
+</header>
+<form id="survey-form">
+<div class="form-group">
+   
+    <label for="name" id="name-label">Name</label>
+<input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name.." required>
+
+</div>
+
+<div class="form-group">
+   
+    <label for="email" id="email-label">Email</label>
+<input class="form-control" type="email" name="email" id="email" placeholder="Enter your Email.." required>
+
+</div>
+<div>
+<label id="number-label" for="number"
+>Age<span class="clue">(optional)</span></label
+>
+<input
+type="number"
+name="age"
+id="number"
+min="8"
+max="99"
+class="form-control"
+placeholder="Age"
+/>
+</div>
+
+<div class="form-group">
+    <p>your current role?</p>
+    <select name="role" id="dropdown" class="form-control" required>
+        <option value=""disabled selected>Select current role</option>
+<option value="student">Student</option>
+<option value="job">Full Time Job</option>    
+<option value="learner">Full Time Learner</option>
+<option value="preferNo">Prefer Not Say</option>
+<option value="else">Something Else</option>
+
+</select>
+</div>
+<div class="form-group">
+<p>Would You Recommend My Portfolio To a Friend</p>
+<label>
+<input type="radio" name="user-recommend" class="input-radio" value="definitely" checked>
+ Definitely</label>
+  
+<label>
+<input type="radio" name="user-recommend" class="input-radio" value="maybe">
+Maybe
+</label>
+<label>
+    <input type="radio" name="user-recommend" class="input-radio" value="not-sure">Not Sure
+</label>
+</div>
+<div class="form-group">
+<p> What is your favorite feature of My Portfolio?</p>
+<select name="most-like" id="most-like" class="form-control" required>
+<option disabled selected value>Select an option</option>
+<option value="services">Services</option>
+<option value="projects">Projects</option>
+<option value="prices">prices</option>
+
+</select>
+</div>
+<div class="form-group">
+<p>What do you suggest? 
+    <span class="clue">(Check all that)</span>
+</p>
+<label>
+    <input type="checkbox" name="prefer" class="input-checkbox" value="source">Give Client All Project Source </label>
+    <label>
+    <input type="checkbox" name="prefer" class="input-checkbox" value="responsive"> Make website responsive for more devices</label>
+    <label>
+    <input type="checkbox" name="prefer" 
+    class="input-checkbox" value="price-plans">
+Make more prices Plans
+</label>
+    <label>
+    <input type="checkbox" name="prefer" 
+    class="input-checkbox" value="course">Make your Own Course</label>
+    <label>
+</div>
+
+<div class="form-group">
+<p>Leave a comment...!</p>
+<textarea name="comment" id="comments" class="input-textarea" placeholder="Leave your fucking opinion Here...."></textarea>
+</div>
+<div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+
+
+
+</div>
+</form>
+</div>
+</body>
+</html>
